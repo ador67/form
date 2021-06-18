@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <title></title>
+  </head>
+  <body>
+    
+    <div class="container">
+      
+     <header>
+       
+       <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+       
+    <p id="description" class="description text-center">
+      
+      Thank you for taking the time to help us improve the platform
+      
+    </p>
+       
+     </header>
+      
+      <form id="survey_form" action="" method="get" accept-charset="utf-8">
+        
+        <div class="form_group">
+          
+          <label for="name">name</label> <br />
+          <input type="text" name="name" id="name" placeholder="name" required="" />
+          
+        </div>
+        
+        <div class="form_group">
+          
+          <label for="email">Email</label> <br />
+          <input type="email" name="email" id="email" placeholder="Enter Your Email" required />
+          
+        </div>
+        
+        <div class="form_group">
+          
+          <label id="number-label" for="age" >Age<span class="clue">(optional)</span></label> <br />
+          
+          <input type="number" name="age" id="age" placeholder="Enter Your age" 
+          required  />
+          
+        </div>
+        
+        <div class="form_group">
+          
+          <label id="number-label" for="password" >password</label> <br />
+          
+          <input type="password" name="password" id="password" placeholder="Enter Your Password" 
+          required  />
+          
+        </div>
+        
+        
+    <div class="form-group-radio ">
+      <p>what is Your Gender?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="Male"
+          type="radio"
+          class="input-radio"
+        />Male</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="Female"
+          type="radio"
+          class="input-radio"
+        />Female</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="other"
+          type="radio"
+          class="input-radio"
+        />Other</label
+      >
+    </div>
+        
+        <div class="form-group">
+          
+      <p>Any comments or suggestions?</p>
+      
+      <input type="text" id="comments" name="comment" placeholder="Enter your comment here..." />
+      
+    </div>
+        
+        <div class="button">
+          
+          <input type="submit" name="button" value="Submit"  />
+          
+        </div>
+        
+      </form>
+      
+    </div>
+    
+  </body>
+</html>

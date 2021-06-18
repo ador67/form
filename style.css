@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+*{
+  box-sizing: border-box;
+    margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color:#f3f3f3;
+}
+
+/* mobile friendly alternative to using background-attachment: fixed */
+body::before{
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: #1b1b32;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container{
+  width: 100%;
+  padding:20px 0px ;
+}
+header{
+  text-align: center;
+  padding: 20px 0px;
+  margin-bottom: 12px;
+}
+.description{
+  font-size: 15px;
+  font-style: italic;
+  
+}
+.form_group input{
+  width: 100%;
+  padding: 10px 3px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  margin: 10px 0px;
+}
+
+#survey_form{
+  display: block;
+  margin: auto;
+  width: 400px;
+  height: auto;
+  padding: 30px;
+  border-radius: 4px;
+  background: rgba(27, 27, 50, 0.8);
+}
+
+.form-group-radio{
+  padding-bottom: 10px;
+}
+.form-group-radio p{
+  margin: 10px 0px;
+}
+.form-group-radio label{
+  margin-right: 3px;
+}
+input#comments{
+  width: 100%;
+  padding: 8px;
+  padding-bottom: 40px;
+  margin:10px 0px ;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+.button input{
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 0;
+  background: #37af65;
+  color: #f3f3f3;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+.button input:hover{
+  background-color: gray;
+}
